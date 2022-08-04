@@ -1,0 +1,107 @@
+@font-face {
+  font-family: irandana;
+  src: url(font/dana-regular.woff2);
+}
+html {
+  font-family: irandana;
+}
+body {
+  color: #132027;
+}
+.headline-of-app{
+    // margin-bottom: 250px;
+    h1{
+        text-align: center
+    }
+}
+.container {
+  display: grid;
+  width: 40vw;
+  grid-template-columns: repeat(3, 3fr);
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  img {
+    max-width: 60px;
+  }
+  .normal {
+    cursor: pointer;
+    display: flex;
+    width: 15vw;
+    height: 20vh;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+#head {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  #head1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    grid-column: 1 / 4;
+  }
+  #back {
+    grid-column: 3 / 4;
+  }
+}
+.bg-red-1 {
+  background-color: #eedcdc;
+}
+.bg-red-2 {
+  background-color: #f0c2c2;
+}
+.bg-red-3 {
+  background-color: #f1a0a0;
+}
+.bg-red-4 {
+  background-color: #f39191;
+}
+.bg-red-5 {
+  background-color: #ef7777;
+}
+.bg-red-6 {
+  background-color: #ee6161;
+}
+.bg-red-7 {
+  background-color: #ef5353;
+}
+.bg-red-8 {
+  background-color: #ef3d3d;
+}
+.bg-red-9 {
+  background-color: #f21b1b;
+}
+.bg-red-10 {
+  background-color: #fa0000;
+}
+.hide {
+  display: none !important;
+}
+.y {
+  padding: 2vw;
+  margin: 0 auto;
+}
+.yesOrNow {
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.acttive {
+  background-color: black;
+  transition: all 500ms ease;
+  color: #fff;
+  h3 {
+    color: #fff;
+  }
+}
+#head1 {
+  border: 1px solid;
+  width: 9%;
+}

@@ -28,7 +28,7 @@ document.addEventListener("click", function (e) {
   if (
     e.target === painbtn ||
     e.target.matches(".pain-pic") ||
-    e.target.matches(".pain-text")
+    e.target.matches(".pain-text-titel")
   ) {
     main.classList.add("hide");
     pain.classList.remove("hide");

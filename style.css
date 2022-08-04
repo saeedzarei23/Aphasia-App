@@ -1,9 +1,10 @@
+@charset "UTF-8";
 @font-face {
   font-family: irandana;
   src: url(font/dana-regular.woff2);
 }
 
-html {
+html, h3 {
   font-family: irandana;
 }
 
@@ -48,6 +49,54 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.container .pain-text-titel {
+  position: relative;
+}
+
+.container .pain-text-titel::after {
+  content: "بیشتر";
+  position: absolute;
+  font-size: 12px;
+  top: 110%;
+  right: 30%;
+}
+
+.container .food-text {
+  position: relative;
+}
+
+.container .food-text::after {
+  content: "بیشتر";
+  position: absolute;
+  font-size: 12px;
+  top: 110%;
+  right: 30%;
+}
+
+.container .emotion-text {
+  position: relative;
+}
+
+.container .emotion-text::after {
+  content: "بیشتر";
+  position: absolute;
+  font-size: 12px;
+  top: 110%;
+  right: 30%;
+}
+
+.container .yesOrnow-text {
+  position: relative;
+}
+
+.container .yesOrnow-text::after {
+  content: "بیشتر";
+  position: absolute;
+  font-size: 12px;
+  top: 110%;
+  right: 30%;
 }
 
 #head {
@@ -146,10 +195,16 @@ body {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   color: #fff;
+  font-size: 2vw !important;
 }
 
 .acttive h3 {
+  font-size: 2vw !important;
   color: #fff;
+}
+
+.acttive img {
+  display: none;
 }
 
 #head1 {

@@ -2,17 +2,24 @@
   font-family: irandana;
   src: url(font/dana-regular.woff2);
 }
-html {
+@mixin after {
+  content: "بیشتر";
+    position: absolute;
+    font-size: 12px;
+    top: 110%;
+    right: 30%;
+}
+html,h3 {
   font-family: irandana;
 }
 body {
   color: #132027;
 }
-.headline-of-app{
-    // margin-bottom: 250px;
-    h1{
-        text-align: center
-    }
+.headline-of-app {
+  // margin-bottom: 250px;
+  h1 {
+    text-align: center;
+  }
 }
 .container {
   display: grid;
@@ -34,6 +41,31 @@ body {
     justify-content: center;
     flex-direction: column;
   }
+  .pain-text-titel {
+    position: relative;
+  }
+  .pain-text-titel::after {
+    @include after()
+  }
+  .food-text{
+    position: relative;
+  }
+  .food-text::after{
+    @include after()
+  }
+  .emotion-text{
+    position: relative;
+  }
+  .emotion-text::after{
+    @include after()
+  }
+  .yesOrnow-text{
+    position: relative;
+  }
+  .yesOrnow-text::after{
+    @include after()
+  }
+
 }
 #head {
   display: grid;
@@ -90,15 +122,18 @@ body {
 .yesOrNow {
   display: flex;
   flex-direction: column;
-
-  
 }
 .acttive {
   background-color: black;
   transition: all 500ms ease;
   color: #fff;
+  font-size: 2vw !important;
   h3 {
+    font-size: 2vw !important;
     color: #fff;
+  }
+  img {
+    display: none;
   }
 }
 #head1 {

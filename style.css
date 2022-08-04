@@ -19,7 +19,7 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  width: 40vw;
+  width: 45vw;
   -ms-grid-columns: (3fr)[3];
       grid-template-columns: repeat(3, 3fr);
   position: absolute;
@@ -210,5 +210,17 @@ body {
 #head1 {
   border: 1px solid;
   width: 9%;
+}
+
+.pain-text {
+  position: relative;
+}
+
+.pain-text::after {
+  content: "بیشتر";
+  position: absolute;
+  font-size: 12px;
+  top: 110%;
+  right: 30%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,7 +23,8 @@ body {
 }
 .container {
   display: grid;
-  width: 40vw;
+  width: 45vw;
+
   grid-template-columns: repeat(3, 3fr);
   position: absolute;
   left: 30%;
@@ -65,6 +66,7 @@ body {
   .yesOrnow-text::after{
     @include after()
   }
+  
 
 }
 #head {
@@ -139,4 +141,10 @@ body {
 #head1 {
   border: 1px solid;
   width: 9%;
+}
+.pain-text{
+  position: relative;
+}
+.pain-text::after{
+  @include after()
 }

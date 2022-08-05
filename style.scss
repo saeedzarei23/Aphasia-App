@@ -30,14 +30,14 @@ body {
   left: 30%;
   top: 10%;
   img {
-    max-width: 60px;
+    max-width: 4vw;
   }
   .normal {
     cursor: pointer;
     display: flex;
     width: 15vw;
     height: 20vh;
-    border: 1px solid;
+    border: .1vw solid;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -139,7 +139,7 @@ body {
   }
 }
 #head1 {
-  border: 1px solid;
+  border: .1vw solid;
   width: 9%;
 }
 .pain-text{
